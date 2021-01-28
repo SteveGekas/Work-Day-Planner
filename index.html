@@ -19,95 +19,73 @@
   <header class="jumbotron" "bg-image">
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
-    <p id="currentDay" class="lead-date">Today is </p>
+    <p id="currentDay" class="lead Date">Today is </p>
   </header>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-
-  <script>
-    $(document).ready(function () {
-      //gets the date for now (whenever you open the app)
-      var todayDate = moment().format("dddd, MMMM Do YYYY");
-      //console.log(todayDate);
-      $("#currentDay").append(todayDate);
-    })
-
-    var nineA = ("9AM");
-    var tenA = ("10AM");
-    var elevenA = ("11AM");
-    var twelveP = ("12PM");
-    var oneP = ("1PM");
-    var twoP = ("2PM");
-    var threeP = ("3PM");
-    var fourP = ("4PM");
-    var fiveP = ("5PM");
-
-
-  </script>
-
-
-
+  
   <div class="container">
     <!-- Timeblocks go here -->
     <br>
-    <div class="row">
-      <textarea readonly id="time" class="col-sm-1">9AM</textarea>
-      <textarea type="text" class="col-sm-10" placeholder="Enter any work related commitments."></textarea>
-      <button type="button" class="col-sm-1 saveBtn fa fa-save fa-3x"></button>
+    <div class="row nine">
+      <textarea readonly id = "showTime 9" class="col-sm-1">9:00AM</textarea>
+      <textarea type="text" id="time" class="col-sm-10 9" placeholder="Enter any work related commitments."></textarea>
+      <button type="button" id = "b9" class="col-sm-1 saveBtn fa fa-save fa-3x"></button>
     </div>
 
-    <div class="row">
-      <textarea readonly id="time" class="col-sm-1">10AM</textarea>
-      <textarea type="text" class="col-sm-10" placeholder="Enter any work related commitments."></textarea>
-      <button type="button" class="col-sm-1 saveBtn fa fa-save fa-3x"></button>
+    <div class="row ten">
+      <textarea readonly id = "showTime 10" class="col-sm-1">10:00AM</textarea>
+      <textarea type="text" id="time" class="col-sm-10 10" placeholder="Enter any work related commitments."></textarea>
+      <button type="button" id = "b10" class="col-sm-1 saveBtn fa fa-save fa-3x"></button>
     </div>
 
-    <div class="row">
-      <textarea readonly id="time" class="col-sm-1">11AM</textarea>
-      <textarea type="text" class="col-sm-10" placeholder="Enter any work related commitments."></textarea>
-      <button type="button" class="col-sm-1 saveBtn fa fa-save fa-3x"></button>
+    <div class="row eleven">
+      <textarea readonly id = "showTime 11"  class="col-sm-1">11:00AM</textarea>
+      <textarea type="text" id="time" class="col-sm-10 11" placeholder="Enter any work related commitments."></textarea>
+      <button type="button" id = "b11" class="col-sm-1 saveBtn fa fa-save fa-3x"></button>
     </div>
 
-    <div class="row">
-      <textarea readonly id="time" class="col-sm-1">12PM</textarea>
-      <textarea type="text" class="col-sm-10" placeholder="Enter any work related commitments."></textarea>
-      <button type="button" class="col-sm-1 saveBtn fa fa-save fa-3x"></button>
+    <div class="row twelve">
+      <textarea readonly id = "showTime 12"  class="col-sm-1">12:00PM</textarea>
+      <textarea type="text" id="time" class="col-sm-10 12" placeholder="Enter any work related commitments."></textarea>
+      <button type="button" id = "b12" class="col-sm-1 saveBtn fa fa-save fa-3x"></button>
     </div>
 
-    <div class="row">
-      <textarea readonly id="time" class="col-sm-1">1PM</textarea>
-      <textarea type="text" class="col-sm-10" placeholder="Enter any work related commitments."></textarea>
-      <button type="button" class="col-sm-1 saveBtn fa fa-save fa-3x"></button>
+    <div class="row one">
+      <textarea readonly id = "showTime 1" class="col-sm-1">1:00PM</textarea>
+      <textarea type="text" id="time" class="col-sm-10 1" placeholder="Enter any work related commitments."></textarea>
+      <button type="button" id = "b1" class="col-sm-1 saveBtn fa fa-save fa-3x"></button>
     </div>
 
-    <div class="row">
-      <textarea readonly id="time" class="col-sm-1">2PM</textarea>
-      <textarea type="text" class="col-sm-10" placeholder="Enter any work related commitments."></textarea>
-      <button type="button" class="col-sm-1 saveBtn fa fa-save fa-3x"></button>
+    <div class="row two">
+      <textarea readonly id = "showTime 2" class="col-sm-1">2:00PM</textarea>
+      <textarea type="text" id="time" class="col-sm-10 2" placeholder="Enter any work related commitments."></textarea>
+      <button type="button" id = "b2" class="col-sm-1 saveBtn fa fa-save fa-3x"></button>
     </div>
 
-    <div class="row">
-      <textarea readonly id="time" class="col-sm-1">3PM</textarea>
-      <textarea type="text" class="col-sm-10" placeholder="Enter any work related commitments."></textarea>
-      <button type="button" class="col-sm-1 saveBtn fa fa-save fa-3x"></button>
+    <div class="row three">
+      <textarea readonly id = "showTime 3" class="col-sm-1">3:00PM</textarea>
+      <textarea type="text" id="time" class="col-sm-10 3" placeholder="Enter any work related commitments."></textarea>
+      <button type="button" id = "b3" class="col-sm-1 saveBtn fa fa-save fa-3x"></button>
     </div>
 
-    <div class="row">
-      <textarea readonly id="time" class="col-sm-1">4PM</textarea>
-      <textarea type="text" class="col-sm-10" placeholder="Enter any work related commitments."></textarea>
-      <button type="button" class="col-sm-1 saveBtn fa fa-save fa-3x"></button>
+    <div class="row four">
+      <textarea readonly id = "showTime 4" class="col-sm-1">4:00PM</textarea>
+      <textarea type="text" id="time" class="col-sm-10 4" placeholder="Enter any work related commitments."></textarea>
+      <button type="button" id = "b4" class="col-sm-1 saveBtn fa fa-save fa-3x"></button>
     </div>
 
-    <div class="row">
-      <textarea readonly id="time" class="col-sm-1">5PM</textarea>
-      <textarea type="text" class="col-sm-10" placeholder="Enter any work related commitments."></textarea>
-      <button type="button" class="col-sm-1 saveBtn fa fa-save fa-3x"></button>
+    <div class="row five">
+      <textarea readonly id = "showTime 5" class="col-sm-1">5:00PM</textarea>
+      <textarea type="text" id="time" class="col-sm-10 5" placeholder="Enter any work related commitments."></textarea>
+      <button type="button" id = "b5" class="col-sm-1 saveBtn fa fa-save fa-3x"></button>
     </div>
 
 
   </div>
-
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.js"; integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="; crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
