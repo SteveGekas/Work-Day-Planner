@@ -5,8 +5,6 @@ $(document).ready(function () {
   //console.log(toDayDate);
   $("#currentDay").append(toDayDate);
 
-  var nowHour = moment().format("hh A");
-  //console.log(hour);
 
   //set variables in array
   var workDay = {
@@ -21,7 +19,7 @@ $(document).ready(function () {
     "5": ""
   }
 
-
+  //saves text to local storage
   $("#b9").click(function () {
     var text = $(".9").val();
     workDay[9] = text;;
@@ -93,36 +91,42 @@ $(document).ready(function () {
     //console.log(text)
   });
 
+  //adds recalled text into textarea
   var recallText = JSON.parse(window.localStorage.getItem(9))
-    $('.9').val(recallText);
+  $('.9').val(recallText);
 
-    var recallText = JSON.parse(window.localStorage.getItem(10))
-    $('.10').val(recallText);
+  var recallText = JSON.parse(window.localStorage.getItem(10))
+  $('.10').val(recallText);
 
-    var recallText = JSON.parse(window.localStorage.getItem(11))
-    $('.11').val(recallText);
+  var recallText = JSON.parse(window.localStorage.getItem(11))
+  $('.11').val(recallText);
 
-    var recallText = JSON.parse(window.localStorage.getItem(12))
-    $('.12').val(recallText);
+  var recallText = JSON.parse(window.localStorage.getItem(12))
+  $('.12').val(recallText);
 
-    var recallText = JSON.parse(window.localStorage.getItem(1))
-    $('.1').val(recallText);
+  var recallText = JSON.parse(window.localStorage.getItem(1))
+  $('.1').val(recallText);
 
-    var recallText = JSON.parse(window.localStorage.getItem(2))
-    $('.2').val(recallText);
+  var recallText = JSON.parse(window.localStorage.getItem(2))
+  $('.2').val(recallText);
 
-    var recallText = JSON.parse(window.localStorage.getItem(3))
-    $('.3').val(recallText);
+  var recallText = JSON.parse(window.localStorage.getItem(3))
+  $('.3').val(recallText);
 
-    var recallText = JSON.parse(window.localStorage.getItem(4))
-    $('.4').val(recallText);
+  var recallText = JSON.parse(window.localStorage.getItem(4))
+  $('.4').val(recallText);
 
-    var recallText = JSON.parse(window.localStorage.getItem(5))
-    $('.5').val(recallText);
+  var recallText = JSON.parse(window.localStorage.getItem(5))
+  $('.5').val(recallText);
 
+  //clears local storage
+  localStorage.clear();
 
-localStorage.clear();
+  //formats time to standard 12 hour time
+  var nowHour = moment().format("hh A");
+  //console.log(hour);
 
+  //sets colors for past, present and future
   for (i = 9; i < 18; i++) {
     var checkTime = "nowHour" + i
     //console.log(checkTime)
@@ -137,8 +141,44 @@ localStorage.clear();
       $(checkTime).css("background-color", "green")
     }
   }
-  //if statement for past hours
-  if ("#showTime" === nowHour) {
+
+  //formats time to standard 12 hour time
+  var nowHour = moment().format("hh A");
+  //console.log(hour);
+  //if statements for past hours
+  if (nowHour === 9) {
+    $("#time").css("background-color", "red");
+  }
+
+  if (nowHour === 10) {
+    $("#time").css("background-color", "red");
+  }
+
+  if (nowHour === 11) {
+    $("#time").css("background-color", "red");
+  }
+
+  if (nowHour === 12) {
+    $("#time").css("background-color", "red");
+  }
+
+  if (nowHour === 1) {
+    $("#time").css("background-color", "red");
+  }
+
+  if (nowHour === 2) {
+    $("#time").css("background-color", "red");
+  }
+
+  if (nowHour === 3) {
+    $("#time").css("background-color", "red");
+  }
+
+  if (nowHour === 4) {
+    $("#time").css("background-color", "red");
+  }
+
+  if (nowHour === 5) {
     $("#time").css("background-color", "red");
   }
 
