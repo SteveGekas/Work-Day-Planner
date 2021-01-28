@@ -93,6 +93,33 @@ $(document).ready(function () {
     //console.log(text)
   });
 
+  var recallText = JSON.parse(window.localStorage.getItem(9))
+    $('.9').val(recallText);
+
+    var recallText = JSON.parse(window.localStorage.getItem(10))
+    $('.10').val(recallText);
+
+    var recallText = JSON.parse(window.localStorage.getItem(11))
+    $('.11').val(recallText);
+
+    var recallText = JSON.parse(window.localStorage.getItem(12))
+    $('.12').val(recallText);
+
+    var recallText = JSON.parse(window.localStorage.getItem(1))
+    $('.1').val(recallText);
+
+    var recallText = JSON.parse(window.localStorage.getItem(2))
+    $('.2').val(recallText);
+
+    var recallText = JSON.parse(window.localStorage.getItem(3))
+    $('.3').val(recallText);
+
+    var recallText = JSON.parse(window.localStorage.getItem(4))
+    $('.4').val(recallText);
+
+    var recallText = JSON.parse(window.localStorage.getItem(5))
+    $('.5').val(recallText);
+
 
   for (i = 9; i < 18; i++) {
     var checkTime = "nowHour" + i
@@ -116,10 +143,7 @@ $(document).ready(function () {
 
 
 
-  // $("button").on("click", function(save) {
-  //   var hour = $(this).parent().attr("id")
-  //   var value = $(this).siblings("textArea").val()
-  //   localStorage = setItem(hour, value);
+
 })
 
 
