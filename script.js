@@ -121,6 +121,8 @@ $(document).ready(function () {
     $('.5').val(recallText);
 
 
+localStorage.clear();
+
   for (i = 9; i < 18; i++) {
     var checkTime = "nowHour" + i
     //console.log(checkTime)
