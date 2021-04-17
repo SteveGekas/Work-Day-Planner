@@ -1,25 +1,45 @@
-Work-Day-Planner
+# Work Day Planner
+  
+   None
 
-## Description 
+  ##Table of Contents
+  
+   [Description](#description)
+   [Installation](#installation)
+   [Usage](#usage)
+   [Contributions](#contributions)
+   [Testing](#testing)
+   [License](#license)
+   [Github](#github)
+   [Email](#email)
+   [Links](#links)
+  
+  
 
-I used the HTML and CSS files to construct a script.js file to make a daily planner.
+  ## Description
+  I used the HTML and CSS files to construct a script.js file to make a daily planner.
 
-## Installation
+  ## Installation
+  OPen the HTML file in a browser to fill in the planner.
 
-I opened index.html in Google Chrome to test the code the was written and updated in the HTML, CSS and JS files.
+  ## Usage
+  You can add events in each text area for each hour of the work day.  When you click the save button, the information will be stored in loca storage.  When you refresh the page, the information will be recalled from local storage.  If you were to refresh the page a second time, the information will be cleared.
 
+  ## Contributions
+  Contributions can be made through Github.
 
-## Usage 
+  ## Testing
+  N/A
 
-You can add events in each text area for each hour of the work day.  When you click the save button, the information will be stored in loca storage.  When you refresh the page, the information will be recalled from local storage.  If you were to refresh the page a second time, the information will be cleared.
+  ## License
+  None
+    
+  ## Github
+  Look for me on Github: SteveGekas
 
-```md
-![alt text](assets/images/screenshot.png)
-```
+  ## Email
+  For any inquiries, please email me at: s.gekas9@gmail.com
 
-
-## Credits
-
-Steve Gekas
-
+  ##Links
+  https://github.com/SteveGekas/Work-Day-Planner       https://stevegekas.github.io/Work-Day-Planner/
 
